@@ -1,0 +1,21 @@
+.unmerged{
+    background-color: #EEEEEE;
+}
+
+.search-div{
+    margin: 1em;
+    background-color: #ccff66;
+    padding: 1em;
+    border-radius: .5em;
+    font-size: 1.25em;
+}
+
+.merged{
+    background-color: #dd4b39;
+}
+
+#loading-indicator {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}

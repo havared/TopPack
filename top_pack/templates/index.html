@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+ {% load i18n %}
+ {% block content %}
+ <div class="container content">
+       <div class="row search-div">
+        <div class="row">
+         <div class="col-md-6">
+         Enter Query to search:  <input type="text" id="searchQuery"/>
+         </div>
+         <div class="col-md-3">
+          <button class="btn btn-primary" onclick="load_repositories()">Search</button>
+         </div>
+
+         <div class="col-md-3">
+          <button class="btn btn-primary" onclick="clear_local()">Reset Imported Packages</button>
+         </div>
+        </div>
+        <div class="row">
+         <div class="col-md-12">
+           <a href="/top-packages/">Get List of Top packages</a>
+         </div>
+        </div>
+       </div>
+       <table id="repo-table" class="table table-bordered">
+       </table>
+  </div>
+ {% endblock content %}
+ {% block extra_javascript %}
+ <script src="/static/js/search.js"></script>
+ {% endblock extra_javascript %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+ {% load i18n %}
+ {% block content %}
+ <div class="container content">
+     <a href="/home">Back to Home Page</a>
+     <h1>Top Packages</h1>
+     <input type="text" id="packageQuery" placeholder="Search in packages" onkeyup="searchPackage()" />
+     <table id="top-packages-list" class="table table-bordered">
+
+     </table>
+  </div>
+ {% endblock content %}
+ {% block extra_javascript %}
+ <script src="/static/js/top-packages.js"></script>
+ {% endblock extra_javascript %}
