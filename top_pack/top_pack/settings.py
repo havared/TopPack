@@ -39,7 +39,7 @@ TEMPLATES = [
 SECRET_KEY = '3l%(bhl(#)ddf1)h7pr)(3*5$&n%_!b93i$q3y&(#ga=$%%k!s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 

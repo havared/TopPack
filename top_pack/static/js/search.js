@@ -66,7 +66,7 @@ function load_repositories(){
          document.getElementById('repo-table').innerHTML=table_rows;
      },
      error: function(error){
-            alert(error.responseText);
+            alert("Some Error");
     }
     });
 }
